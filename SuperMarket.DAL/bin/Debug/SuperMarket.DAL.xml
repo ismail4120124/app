@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SuperMarket.DAL
+</name>
+</assembly>
+<members>
+<member name="T:SuperMarket.DAL.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SuperMarket.DAL.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SuperMarket.DAL.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:SuperMarket.DAL.AccountDAL.GetAllAccounts">
+ <summary>
+ يجلب كل الحسابات من قاعدة البيانات مرتبة حسب رقم الحساب.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.AccountDAL.AddAccount(SuperMarket.Entities.Account)">
+ <summary>
+ يضيف حسابًا جديدًا إلى قاعدة البيانات.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.DashboardDAL.GetDashboardStats">
+ <summary>
+ يجلب الإحصائيات الرئيسية للوحة التحكم في استعلام واحد.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.DashboardDAL.GetLiveSales(System.DateTime)">
+ <summary>
+ يجلب آخر فواتير المبيعات التي تمت بعد وقت محدد.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ExpenseCategoryDAL.GetAllExpenseCategories">
+ <summary>
+ يجلب كل بنود المصاريف مع اسم الحساب المحاسبي المرتبط بها.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ExpenseCategoryDAL.AddExpenseCategory(SuperMarket.Entities.ExpenseCategory)">
+ <summary>
+ يضيف بند مصروف جديد إلى قاعدة البيانات.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ExpenseDAL.GetRecentExpenses(System.Int32)">
+ <summary>
+ يجلب آخر المصروفات المسجلة مع تفاصيلها.
+ </summary>
+ <param name="recordCount">عدد السجلات المراد جلبها.</param>
+</member>
+<member name="M:SuperMarket.DAL.JournalVoucherDAL.GetLedgerForAccount(System.Int32,System.DateTime,System.DateTime)">
+ <summary>
+ يجلب كشف حساب تفصيلي (دفتر أستاذ) لحساب معين خلال فترة زمنية.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.JournalVoucherDAL.GetTrialBalance(System.DateTime,System.DateTime,System.Boolean)">
+ <summary>
+ يجلب بيانات ميزان المراجعة لفترة زمنية محددة.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ProductDAL.SearchProductForSale(System.String,System.Int32)">
+ <summary>
+ يبحث عن منتج مخصص لنقاط البيع، مع جلب سعره وكميته من مخزون فرع محدد.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ProductDAL.GetItemLedger(System.Int32,System.Int32,System.DateTime,System.DateTime)">
+ <summary>
+ يجلب كشف حساب تفصيلي لحركة صنف معين في فرع محدد خلال فترة زمنية.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ProductDAL.SearchProductsSimple(System.String,System.Int32)">
+ <summary>
+ يبحث عن المنتجات بشكل مبسط (للاستخدام مع AutoComplete).
+ </summary>
+ <param name="searchTerm">النص المراد البحث عنه (جزء من الاسم أو الباركود).</param>
+ <param name="maxRows">الحد الأقصى لعدد النتائج.</param>
+ <returns>قائمة بسيطة من المنتجات المطابقة.</returns>
+</member>
+<member name="M:SuperMarket.DAL.ProductDAL.GetProductsForPricing(System.Int32)">
+ <summary>
+ يجلب قائمة بكل المنتجات الموجودة في مخزون فرع معين مع تكلفتها وسعر بيعها.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.ProductDAL.UpdateProductPrices(System.Collections.Generic.List{SuperMarket.Entities.ProductPricingInfo},System.Int32)">
+ <summary>
+ يقوم بتحديث أسعار بيع مجموعة من المنتجات لفرع معين داخل Transaction.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.SalesInvoiceDAL.GetInvoiceForPrinting(System.Int64)">
+ <summary>
+ يجلب كل بيانات فاتورة مبيعات معينة لغرض الطباعة.
+ </summary>
+</member>
+<member name="M:SuperMarket.DAL.SalesReturnDAL.SaveReturnInvoice(SuperMarket.Entities.SalesReturnInvoice)">
+ <summary>
+ يحفظ فاتورة المرتجع بالكامل داخل Transaction لضمان سلامة البيانات.
+ </summary>
+ <param name="returnInvoice">كائن فاتورة المرتجع الذي يحتوي على كل التفاصيل.</param>
+ <returns>رقم فاتورة المرتجع الجديد.</returns>
+</member>
+<member name="M:SuperMarket.DAL.StockTransferDAL.SaveStockTransfer(SuperMarket.Entities.StockTransfer)">
+ <summary>
+ يحفظ أمر التحويل المخزني بالكامل داخل Transaction.
+ </summary>
+</member>
+</members>
+</doc>
