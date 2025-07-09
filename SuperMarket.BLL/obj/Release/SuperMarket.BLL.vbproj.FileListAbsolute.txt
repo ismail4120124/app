@@ -1,0 +1,4 @@
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Release\SuperMarket.BLL.vbproj.AssemblyReference.cache
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Release\SuperMarket.BLL.Resources.resources
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Release\SuperMarket.BLL.vbproj.GenerateResource.cache
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Release\SuperMarket.BLL.vbproj.CoreCompileInputs.cache

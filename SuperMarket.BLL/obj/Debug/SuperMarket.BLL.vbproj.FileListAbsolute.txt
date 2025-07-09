@@ -1,0 +1,17 @@
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.BLL.dll
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.BLL.pdb
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.BLL.xml
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.DAL.dll
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.Entities.dll
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.DAL.pdb
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.DAL.xml
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.Entities.pdb
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\bin\Debug\SuperMarket.Entities.xml
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.vbproj.AssemblyReference.cache
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.Resources.resources
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.vbproj.GenerateResource.cache
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.vbproj.CoreCompileInputs.cache
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.vbproj.CopyComplete
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.dll
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.xml
+C:\Users\ismail.t\source\repos\SuperMarket.BLL\obj\Debug\SuperMarket.BLL.pdb
