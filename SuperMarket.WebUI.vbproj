@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D123B576-B188-432A-A61A-4F1CF5DB0BA6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SuperMarket.WebUI</RootNamespace>
+    <AssemblyName>SuperMarket.WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SuperMarket.WebUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SuperMarket.WebUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="CustomerService.asmx" />
+    <Content Include="DashboardService.asmx" />
+    <Content Include="Global.asax" />
+    <Content Include="Global111.asax" />
+    <Content Include="Modules\Accounting\AccountingSettings.aspx" />
+    <Content Include="Modules\Accounting\ChartOfAccounts.aspx" />
+    <Content Include="Modules\Accounting\ExpenseCategories.aspx" />
+    <Content Include="Modules\Accounting\Expenses.aspx" />
+    <Content Include="Modules\Accounting\LedgerReport.aspx" />
+    <Content Include="Modules\Accounting\TrialBalance.aspx" />
+    <Content Include="Modules\Core\Branches.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Modules\Core\Categories.aspx" />
+    <Content Include="Modules\Core\RolePermissions.aspx" />
+    <Content Include="Modules\Core\Units.aspx" />
+    <Content Include="Modules\Core\Users.aspx" />
+    <Content Include="Modules\Inventory\GenerateBarcode.aspx" />
+    <Content Include="Modules\Inventory\OpeningBalance.aspx" />
+    <Content Include="Modules\Inventory\ProductPricing.aspx" />
+    <Content Include="Modules\Inventory\Products.aspx" />
+    <Content Include="Modules\Inventory\Stocktaking.aspx" />
+    <Content Include="Modules\Inventory\StockTransfers.aspx" />
+    <Content Include="Modules\Purchases\PurchaseInvoice.aspx" />
+    <Content Include="Modules\Purchases\Suppliers.aspx" />
+    <Content Include="Modules\Reports\ItemLedger.aspx" />
+    <Content Include="Modules\Reports\LiveMonitor1.aspx" />
+    <Content Include="Modules\Sales\Customers.aspx" />
+    <Content Include="Modules\Sales\POS.aspx" />
+    <Content Include="Modules\Sales\PrintInvoice.aspx" />
+    <Content Include="Modules\Sales\PrintWholesaleInvoice.aspx" />
+    <Content Include="Modules\Sales\SalesReturn.aspx" />
+    <Content Include="Modules\Sales\Shifts.aspx" />
+    <Content Include="Modules\Sales\WholesaleInvoice.aspx" />
+    <Content Include="ProductService.asmx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessDenied.aspx.designer.vb">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.vb">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\BaseMasterPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\BasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerService.asmx.vb">
+      <DependentUpon>CustomerService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DashboardService.asmx.vb">
+      <DependentUpon>DashboardService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Global111.asax.vb">
+      <DependentUpon>Global111.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\AccountingSettings.aspx.designer.vb">
+      <DependentUpon>AccountingSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\AccountingSettings.aspx.vb">
+      <DependentUpon>AccountingSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounting\ChartOfAccounts.aspx.designer.vb">
+      <DependentUpon>ChartOfAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\ChartOfAccounts.aspx.vb">
+      <DependentUpon>ChartOfAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounting\ExpenseCategories.aspx.designer.vb">
+      <DependentUpon>ExpenseCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\ExpenseCategories.aspx.vb">
+      <DependentUpon>ExpenseCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounting\Expenses.aspx.designer.vb">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\Expenses.aspx.vb">
+      <DependentUpon>Expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounting\LedgerReport.aspx.designer.vb">
+      <DependentUpon>LedgerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\LedgerReport.aspx.vb">
+      <DependentUpon>LedgerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Accounting\TrialBalance.aspx.designer.vb">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Accounting\TrialBalance.aspx.vb">
+      <DependentUpon>TrialBalance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Categories.aspx.designer.vb">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Categories.aspx.vb">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\RolePermissions.aspx.designer.vb">
+      <DependentUpon>RolePermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\RolePermissions.aspx.vb">
+      <DependentUpon>RolePermissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Units.aspx.designer.vb">
+      <DependentUpon>Units.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Units.aspx.vb">
+      <DependentUpon>Units.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Inventory\GenerateBarcode.aspx.designer.vb">
+      <DependentUpon>GenerateBarcode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Inventory\GenerateBarcode.aspx.vb">
+      <DependentUpon>GenerateBarcode.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Inventory\OpeningBalance.aspx.designer.vb">
+      <DependentUpon>OpeningBalance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Inventory\OpeningBalance.aspx.vb">
+      <DependentUpon>OpeningBalance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Inventory\ProductPricing.aspx.designer.vb">
+      <DependentUpon>ProductPricing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Inventory\ProductPricing.aspx.vb">
+      <DependentUpon>ProductPricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Inventory\Products.aspx.designer.vb">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Inventory\Products.aspx.vb">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Inventory\Stocktaking.aspx.designer.vb">
+      <DependentUpon>Stocktaking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Inventory\Stocktaking.aspx.vb">
+      <DependentUpon>Stocktaking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Inventory\StockTransfers.aspx.designer.vb">
+      <DependentUpon>StockTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Inventory\StockTransfers.aspx.vb">
+      <DependentUpon>StockTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Purchases\PurchaseInvoice.aspx.designer.vb">
+      <DependentUpon>PurchaseInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Purchases\PurchaseInvoice.aspx.vb">
+      <DependentUpon>PurchaseInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Purchases\Suppliers.aspx.designer.vb">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Purchases\Suppliers.aspx.vb">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\ItemLedger.aspx.designer.vb">
+      <DependentUpon>ItemLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\ItemLedger.aspx.vb">
+      <DependentUpon>ItemLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\LiveMonitor1.aspx.designer.vb">
+      <DependentUpon>LiveMonitor1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\LiveMonitor1.aspx.vb">
+      <DependentUpon>LiveMonitor1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\Customers.aspx.designer.vb">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\Customers.aspx.vb">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\POS.aspx.designer.vb">
+      <DependentUpon>POS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\POS.aspx.vb">
+      <DependentUpon>POS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\PrintInvoice.aspx.designer.vb">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\PrintInvoice.aspx.vb">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\PrintWholesaleInvoice.aspx.designer.vb">
+      <DependentUpon>PrintWholesaleInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\PrintWholesaleInvoice.aspx.vb">
+      <DependentUpon>PrintWholesaleInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\SalesReturn.aspx.designer.vb">
+      <DependentUpon>SalesReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\SalesReturn.aspx.vb">
+      <DependentUpon>SalesReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\Shifts.aspx.designer.vb">
+      <DependentUpon>Shifts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\Shifts.aspx.vb">
+      <DependentUpon>Shifts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Sales\WholesaleInvoice.aspx.designer.vb">
+      <DependentUpon>WholesaleInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sales\WholesaleInvoice.aspx.vb">
+      <DependentUpon>WholesaleInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modules\Core\Branches.aspx.designer.vb">
+      <DependentUpon>Branches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Branches.aspx.vb">
+      <DependentUpon>Branches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Core\Users.aspx.designer.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Core\Users.aspx.vb">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductService.asmx.vb">
+      <DependentUpon>ProductService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.vb">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.vb">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
+    <Folder Include="Models\" />
+    <Folder Include="Modules\System\" />
+    <Folder Include="pages\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SuperMarket.BLL\SuperMarket.BLL.vbproj">
+      <Project>{b1c942c1-a663-445a-a246-5177a0944b2c}</Project>
+      <Name>SuperMarket.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMarket.DAL\SuperMarket.DAL.vbproj">
+      <Project>{b2e15ccc-7c62-41b3-a98b-2a5518278576}</Project>
+      <Name>SuperMarket.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMarket.Entities\SuperMarket.Entities.vbproj">
+      <Project>{fc3d5732-eae5-4cb2-aab1-6df0e00122aa}</Project>
+      <Name>SuperMarket.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65345</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SuperMarket.WebUI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

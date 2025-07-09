@@ -1,0 +1,10 @@
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\bin\Release\SuperMarket.Entities.dll
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\bin\Release\SuperMarket.Entities.pdb
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\bin\Release\SuperMarket.Entities.xml
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.vbproj.AssemblyReference.cache
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.Resources.resources
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.vbproj.GenerateResource.cache
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.vbproj.CoreCompileInputs.cache
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.dll
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.xml
+C:\Users\ismail.t\source\repos\SuperMarket.Entities\obj\Release\SuperMarket.Entities.pdb
